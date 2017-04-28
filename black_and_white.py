@@ -1,7 +1,7 @@
-import image
+import cImage as image
 
 img = image.Image("luther.jpg")
-window = image.ImageWin(img.getWidth(), img.getHeight())
+window = image.ImageWin("black and white", img.getWidth(), img.getHeight())
 
 for row in range(img.getWidth()):
     for col in range(img.getHeight()):
@@ -20,3 +20,4 @@ for row in range(img.getWidth()):
         img.setPixel(row, col, newpixel)
 
 img.draw(window)
+window.exitonclick()

@@ -1,7 +1,7 @@
 import cImage as image
-img = image.Image("images/ae.gif")
+img = image.Image("luther.jpg")
 
-win = image.ImageWin(img.getWidth(), img.getHeight())
+win = image.ImageWin("reverse", img.getWidth(), img.getHeight())
 img.draw(win)
 # img.setDelay(1,15)   # setDelay(0) turns off animation
 
@@ -19,3 +19,5 @@ for row in range(img.getHeight()):
 
 img.draw(win)
 win.exitonclick()
+
+

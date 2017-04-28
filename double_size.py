@@ -1,10 +1,9 @@
-import image
+import cImage as image
 
 img = image.Image("luther.jpg")
 width = img.getWidth()
 height = img.getHeight()
-win = image.ImageWin(img.getWidth()*2, img.getHeight()*2)
-
+win = image.ImageWin("double", img.getWidth()*2, img.getHeight()*2)
 
 img_double = image.EmptyImage(width*2,height*2)
 
@@ -20,3 +19,4 @@ for row in range(img.getHeight()):
         img_double.setPixel(c_pos+1, r_pos+1, pixel)
 
 img_double.draw(win)
+win.exitonclick()
