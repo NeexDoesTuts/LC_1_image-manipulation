@@ -1,6 +1,6 @@
 import cImage as image
 
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 width = img.getWidth()
 height = img.getHeight()
 win = image.ImageWin("double", img.getWidth()*2, img.getHeight()*2)

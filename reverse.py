@@ -1,5 +1,5 @@
 import cImage as image
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 
 win = image.ImageWin("reverse", img.getWidth(), img.getHeight())
 img.draw(win)
@@ -19,5 +19,3 @@ for row in range(img.getHeight()):
 
 img.draw(win)
 win.exitonclick()
-
-

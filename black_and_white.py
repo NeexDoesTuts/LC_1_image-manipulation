@@ -1,6 +1,6 @@
 import cImage as image
 
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 window = image.ImageWin("black and white", img.getWidth(), img.getHeight())
 
 for row in range(img.getWidth()):
@@ -16,7 +16,7 @@ for row in range(img.getWidth()):
             gray = 255
         else:
             gray = 0
-        newpixel = image.Pixel(gray,gray,gray)
+        newpixel = image.Pixel(gray, gray, gray)
         img.setPixel(row, col, newpixel)
 
 img.draw(window)

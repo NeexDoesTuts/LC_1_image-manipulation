@@ -1,6 +1,6 @@
 import cImage as image
 
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 width = img.getWidth()
 height = img.getHeight()
 window = image.ImageWin("smooth", img.getWidth(), img.getHeight())
@@ -14,10 +14,13 @@ def average_pixel(col, row, img):
     max_col = img.getWidth()
     max_row = img.getHeight()
 
-    for i in range(col -1, col + 2):
+    for i in range(col -1, col + 2): # for i in range(
         for j in range(row - 1, row + 2):
             if max_col > i >= 0 and max_row > j >= 0:
-                pixel = img.getPixel(i,j)
+                try:
+                    pixel = img.getPixel(i,j)
+                except:
+                    print("offending coordinates: ({}, {})".format(i, j))
                 pixel_sum_red += pixel.getRed()
                 pixel_sum_green += pixel.getGreen()
                 pixel_sum_blue += pixel.getBlue()

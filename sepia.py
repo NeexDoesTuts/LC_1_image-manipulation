@@ -1,6 +1,6 @@
 import cImage as image
 
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 newimg = image.EmptyImage(img.getWidth(), img.getHeight())
 window = image.ImageWin("sepia", img.getWidth(), img.getHeight())
 

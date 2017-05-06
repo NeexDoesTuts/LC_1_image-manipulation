@@ -1,6 +1,6 @@
 import cImage as image
 
-img = image.Image("luther.jpg")
+img = image.Image("images/luther.jpg")
 window = image.ImageWin("no red", img.getWidth(), img.getHeight())
 
 for row in range(img.getWidth()):
